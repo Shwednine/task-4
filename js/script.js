@@ -1,10 +1,10 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', () => {
     //heart
-    const heartWrap = document.querySelectorAll('.item__heartwrap');
+    const heartWrap = document.querySelectorAll('.heartwrap');
     heartWrap.forEach( function( item ) {
         item.addEventListener('click', function(e) {
-            item.classList.toggle('item__heartwrap_active');
+            item.classList.toggle('heartwrap_active');
         });
     });
 });

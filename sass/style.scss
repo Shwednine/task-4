@@ -111,18 +111,15 @@ a {
         display: flex;
         align-items: center;
         transition: 0.3s all;
-
-        img {
-            width: 20px;
-            margin-right: 10px;
-        }
-
         &:hover {
             color: #FD2E24;
         }
     }
-
-    &__help {
+    &__img{
+        width: 20px;
+        margin-right: 10px;
+}
+    .help {
         display: flex;
         align-items: center;
         font-weight: 500;
@@ -134,11 +131,11 @@ a {
         align-items: center;
         transition: 0.3s all;
 
-        img {
+        &__img {
             width: 18px;
         }
 
-        .wrap {
+        &__wrap {
             width: 47.13px;
             height: 47.13px;
             background: #F6F6F6;
@@ -151,7 +148,7 @@ a {
     }
 }
 
-.catalog__help:hover .wrap {
+.help:hover .help__wrap {
     background: #F4DE4D;
     transition: 0.3s all;
 }
@@ -305,17 +302,24 @@ transition-duration: .25s;
     position: relative;
     width: auto;
     margin: 0 auto;
-    input {
+    &__input {
         padding: 0 17px 0 41px;
-        &::placeholder {
-            font-weight: 500;
-            font-size: 17px;
-            line-height: 22px;
-            color: #000000;
-            opacity: 0.2;
-        }
     }
-    button {
+    &__input::placeholder {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 34px;
+        color: #000000;
+        opacity: 0.2;
+    }
+    &__input::-webkit-input-placeholder{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 34px;
+        color: #000000;
+        opacity: 0.2;
+    }
+    &__btn {
         position: absolute;
         top: 0;
         left: 0;
@@ -353,7 +357,7 @@ transition-duration: .25s;
     justify-content: center;
     align-items: center;
 
-    h2 {
+    .h2 {
         font-weight: bold;
         font-size: 30px;
         line-height: 30px;
@@ -475,7 +479,7 @@ transition-duration: .25s;
 
 }
 
-.item__heartwrap {
+.heartwrap {
     width: 38px;
     height: 38px;
     background: #FFFFFF;
@@ -489,7 +493,7 @@ transition-duration: .25s;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 
-    img {
+    &__img {
         width: 17px;
         height: auto;
         fill: #fff;
@@ -497,7 +501,7 @@ transition-duration: .25s;
     }
 }
 
-.item__heartwrap_active {
+.heartwrap_active {
     background: #FD2E24;
     transition: 0.3s ease-in-out;
 }
@@ -530,7 +534,7 @@ transition-duration: .25s;
         margin-right: 25px;
     }
 
-    .item__sale h2 {
+    .item__h2 {
         width: 200px;
     }
 
@@ -538,7 +542,7 @@ transition-duration: .25s;
         width: 200px;
     }
 
-    .catalog__help .wrap {
+    .help__wrap {
         width: 40px;
         height: 40px;
     }
@@ -586,7 +590,7 @@ transition-duration: .25s;
         margin-right: 25px;
     }
 
-    .item__sale h2 {
+    .item__h2 {
         width: 200px;
     }
 
@@ -594,7 +598,7 @@ transition-duration: .25s;
         width: 200px;
     }
 
-    .catalog__help .wrap {
+    .help__wrap {
         width: 40px;
         height: 40px;
     }
@@ -668,15 +672,11 @@ transition-duration: .25s;
         margin-right: 25px;
     }
 
-    .item__sale h2 {
-        width: 200px;
-    }
-
     .item__descr {
         width: 200px;
     }
 
-    .catalog__help .wrap {
+    .help__wrap {
         width: 40px;
         height: 40px;
     }
