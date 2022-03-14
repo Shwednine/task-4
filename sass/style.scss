@@ -302,6 +302,9 @@ transition-duration: .25s;
     position: relative;
     width: auto;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+
     &__input {
         padding: 0 17px 0 41px;
     }
@@ -326,6 +329,7 @@ transition-duration: .25s;
         cursor: pointer;
         &::before {
             display: block;
+            position: absolute;
             content: url('../icons/search.svg');
             position: absolute;
             top: 0;
